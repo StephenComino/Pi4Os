@@ -94,7 +94,7 @@ char uart_readText()
 {
     if (!uart_isReadByteReady)
     {
-        return (char*)mmio_read(AUX_MU_IO_REG);
+        return (char)mmio_read(AUX_MU_IO_REG);
     }
 }
 
